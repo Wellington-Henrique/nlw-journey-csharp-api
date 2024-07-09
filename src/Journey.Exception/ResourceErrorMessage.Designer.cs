@@ -61,7 +61,7 @@ namespace Journey.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a StartDate must.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The date of the trip must be later than today.
         /// </summary>
         public static string DATE_TRIP_MUST_BE_LATER_THAN_TODAY {
             get {
@@ -70,7 +70,7 @@ namespace Journey.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a EndDate must.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The end date of the trip must be equal to or later than the start date.
         /// </summary>
         public static string END_DATE_TRIP_MUST_BE_LATER_START_DATE {
             get {
@@ -79,11 +79,20 @@ namespace Journey.Exception {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a Name must not be.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The name cannot be empty.
         /// </summary>
         public static string NAME_EMPTY {
             get {
                 return ResourceManager.GetString("NAME_EMPTY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Trip not found.
+        /// </summary>
+        public static string TRIP_NOT_FOUND {
+            get {
+                return ResourceManager.GetString("TRIP_NOT_FOUND", resourceCulture);
             }
         }
     }
